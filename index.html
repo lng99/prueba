@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Prueba</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #0078ff;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #005ecc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 Página de Prueba</h1>
+        <p>Si ves esta página, el HTML está funcionando correctamente.</p>
+
+        <button onclick="saludar()">Haz clic aquí</button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function saludar() {
+            document.getElementById("mensaje").textContent =
+                "¡Hola! JavaScript está funcionando correctamente.";
+        }
+    </script>
+
+</body>
+</html>
