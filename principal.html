@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Cultura Cercana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos para la pantalla de bienvenida minimalista */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .fullscreen-container {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+
+            /* La imagen de fondo con un degradado oscuro para legibilidad */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=1920') no-repeat center center;
+            background-size: cover;
+        }
+
+        .content-box {
+            max-width: 600px;
+        }
+
+        .brand-icon {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #ff6f61; /* Color acento para el ícono */
+        }
+
+        .main-title {
+            font-weight: 700;
+            font-size: 3.5rem;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .btn-access {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 50px; /* Botón con bordes completamente redondeados */
+            transition: all 0.3s ease;
+            background-color: #ff6f61;
+            border: none;
+        }
+
+        .btn-access:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+            background-color: #e65a50;
+        }
+        
+        .login-link a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid #ff6f61;
+            transition: color 0.2s ease;
+        }
+
+        .login-link a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fullscreen-container">
+        <div class="content-box">
+            <div class="brand-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h1 class="main-title">Mundo cultura</h1>
+            <p class="subtitle mb-5">El pulso cultural de tu ciudad, en un solo lugar.</p>
+            
+            <a href="index.html" class="btn btn-access text-white mb-4">
+                Acceder a la Plataforma
+            </a>
+            
+            <div class="login-link">
+                <p>¿Ya tienes una cuenta? <a href="index.html">Inicia Sesión</a></p>
+                <p>o</p>
+                <a href="#">Regístrate</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
